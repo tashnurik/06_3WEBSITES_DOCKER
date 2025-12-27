@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ShipTrack Ops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="icon">🚚</span>
+    <span class="name">ShipTrack Ops</span>
+  </div>
+
+  <nav class="nav">
+    <a class="active" href="./index.html">Dashboard</a>
+    <a href="./pages/shipments.html">Shipments</a>
+    <a href="./pages/analytics.html">Analytics</a>
+    <a href="./pages/support.html">Support</a>
+  </nav>
+
+  <div class="right">
+    <span class="chip" id="envChip">ENV: demo</span>
+    <button class="btn" id="refreshBtn">Refresh</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="kpis">
+    <article class="kpi">
+      <div class="kpiLabel">In Transit</div>
+      <div class="kpiValue" id="kpiTransit">18</div>
+      <div class="kpiHint">Active shipments</div>
+    </article>
+
+    <article class="kpi">
+      <div class="kpiLabel">Delivered</div>
+      <div class="kpiValue" id="kpiDelivered">42</div>
+      <div class="kpiHint">Last 24h</div>
+    </article>
+
+    <article class="kpi">
+      <div class="kpiLabel">Delayed</div>
+      <div class="kpiValue" id="kpiDelayed">3</div>
+      <div class="kpiHint">Needs attention</div>
+    </article>
+
+    <article class="kpi">
+      <div class="kpiLabel">Avg ETA</div>
+      <div class="kpiValue" id="kpiEta">2.4h</div>
+      <div class="kpiHint">Estimated arrival</div>
+    </article>
+  </section>
+
+  <section class="panel">
+    <div class="panelTop">
+      <h1>Recent shipments</h1>
+      <div class="search">
+        <input id="search" placeholder="Search shipment ID, city, status..." />
+      </div>
+    </div>
+
+    <div class="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Route</th>
+            <th>Status</th>
+            <th>Carrier</th>
+            <th>Last update</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- JS will render rows -->
+        </tbody>
+      </table>
+    </div>
+
+    <p class="muted">Demo dashboard. Data is generated locally (no backend).</p>
+  </section>
+</main>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shipments | ShipTrack Ops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="icon">🚚</span>
+    <span class="name">ShipTrack Ops</span>
+  </div>
+
+  <nav class="nav">
+    <a href="../index.html">Dashboard</a>
+    <a class="active" href="./shipments.html">Shipments</a>
+    <a href="./analytics.html">Analytics</a>
+    <a href="./support.html">Support</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="panel">
+    <h1>All Shipments</h1>
+    <p class="muted">Full shipment list (demo view).</p>
+
+    <div class="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Route</th>
+            <th>Status</th>
+            <th>Carrier</th>
+            <th>ETA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ST-10501</td>
+            <td>LA → SF</td>
+            <td><span class="badge warn">In Transit</span></td>
+            <td>WestHaul</td>
+            <td>3h</td>
+          </tr>
+          <tr>
+            <td>ST-10499</td>
+            <td>Austin → Dallas</td>
+            <td><span class="badge good">Delivered</span></td>
+            <td>RoadFox</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>ST-10495</td>
+            <td>Denver → Boulder</td>
+            <td><span class="badge bad">Delayed</span></td>
+            <td>RockyMove</td>
+            <td>6h</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

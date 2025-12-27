@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CareNow Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🩺</div>
+        <div>
+          <div class="brand-name">CareNow</div>
+          <div class="brand-sub">Clinic Portal</div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a class="active" href="./index.html">Overview</a>
+        <a href="./pages/services.html">Services</a>
+        <a href="./pages/doctors.html">Doctors</a>
+        <a href="./pages/appointments.html">Appointments</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <div class="tiny">Today</div>
+        <div class="big" id="todayCount">12</div>
+        <div class="tiny">appointments (demo)</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="top">
+        <div>
+          <h1>Welcome back 👋</h1>
+          <p class="muted">Simple healthcare scheduling and support (frontend demo).</p>
+        </div>
+        <button class="btn" id="bookBtn">Book appointment</button>
+      </header>
+
+      <section class="grid">
+        <article class="panel">
+          <h3>Same-day visits</h3>
+          <p class="muted">Quick booking and clear next steps.</p>
+          <div class="pill ok">Available</div>
+        </article>
+
+        <article class="panel">
+          <h3>Telemedicine</h3>
+          <p class="muted">Video consult flow (demo UI).</p>
+          <div class="pill info">Online</div>
+        </article>
+
+        <article class="panel">
+          <h3>Patient reminders</h3>
+          <p class="muted">Email/SMS reminders (concept).</p>
+          <div class="pill warn">Setup needed</div>
+        </article>
+      </section>
+
+      <section class="panel wide">
+        <h2>Quick check-in</h2>
+        <p class="muted">Demo form (no backend). Just UI + validation.</p>
+
+        <form class="form" id="checkinForm">
+          <div class="row">
+            <label>
+              Full name
+              <input name="name" required minlength="2" placeholder="Your name" />
+            </label>
+            <label>
+              Phone
+              <input name="phone" required placeholder="(555) 555-5555" />
+            </label>
+          </div>
+
+          <label>
+            Reason for visit
+            <textarea name="reason" rows="4" required placeholder="Briefly describe your symptoms..."></textarea>
+          </label>
+
+          <div class="actions">
+            <button class="btn" type="submit">Submit</button>
+            <span class="muted" id="msg"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
