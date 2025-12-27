@@ -11,10 +11,6 @@ docker run -d --name nurchik-bank -p 8081:80 nurchik-bank:1.0
 
 Open: http://localhost:8081
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> daa00a3 (changed README.md localy)
 ![Digital Bank](./screenshots/digital-bank.png)
 
 
@@ -27,10 +23,6 @@ docker run -d --name nurchik-health -p 8082:80 nurchik-health:1.0
 
 Open: http://localhost:8082
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> daa00a3 (changed README.md localy)
 ![Healthcare Portal](./screenshots/healthcare.png)
 
 
