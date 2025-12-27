@@ -4,6 +4,7 @@ Each website is containerized independently using **Docker + Nginx**.
 Make sure Docker is installed and running on your machine.
 
 ### Digital Bank
+```bash
 cd digital-bank
 docker build -t nurchik-bank:1.0 .
 docker run -d --name nurchik-bank -p 8081:80 nurchik-bank:1.0
